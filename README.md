@@ -4,18 +4,18 @@ The taskmanager project is a task queue system implemented in Go, featuring an A
 
 ## Table of Contents
 
-- Overview
-- Disclaimer
-- Architecture
-- Custom DI Model
-- Clean Architecture Application
-- Deployment
-  - Prerequisites
-  - Setup
-  - Running the Services
-- Explanation of the Custom DI Model and Clean Architecture Application
-  - Custom Dependency Injection (DI) Model
-  - Application of Clean Architecture
+- [Overview](#overview)
+- [Disclaimer](#disclaimer)
+- [Architecture](#architecture)
+- [Custom DI Model](#custom-di-model)
+- [Clean Architecture Application](#clean-architecture-application)
+- [Deployment](#deployment)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Running the Services](#running-the-services)
+- [Explanation of the Custom DI Model and Clean Architecture Application](#explanation-of-the-custom-di-model-and-clean-architecture-application)
+  - [Custom Dependency Injection (DI) Model](#custom-dependency-injection-di-model)
+  - [Application of Clean Architecture](#application-of-clean-architecture)
 
 ## Overview
 
