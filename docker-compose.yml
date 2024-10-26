@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ./task_queue_system
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+    environment:
+      - SERVICE_CONFIG=./app/config/config_dev.yml
+
+  worker:
+    build:
+      context: ./task_worker
+      dockerfile: Dockerfile
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:6-alpine
+    ports:
+      - "6379:6379"

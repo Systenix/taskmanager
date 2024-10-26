@@ -1,0 +1,20 @@
+ServiceListener: &ServiceListener
+  code: service_listener
+  protocol: http
+  address: "0.0.0.0:8080"
+  trustedProxies:
+    - "tiny.io"
+
+sqlConfigTx: &sqlConfigTx
+  code: "postgre_sql"
+  address: "postgresql://testuser:password@db:5432/urlshortener"
+  tx: true
+
+useCase:
+  url_shortener:
+    code: "url_shortener"
+    URLShortenerDataConfig: &URLShortenerDataConfig
+      code: "url_shortener_data"
+      dataStoreConfig: *sqlConfigTx
+    domain: "://tiny.io/"
+    shortURLLength: 6

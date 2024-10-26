@@ -1,0 +1,19 @@
+ServiceListener: &ServiceListener
+  code: service_listener
+  protocol: http
+  address: "0.0.0.0:8080"
+  trustedProxies:
+    - "localhost"
+
+redisConfig: &redisConfig
+  code: "redis"
+  address: "redis:6379"
+  password: ""
+  db: 0
+
+useCase:
+  task_queue_system:
+    code: "task_queue_system_use_case"
+    TaskQueueSystemDataConfig: &TaskQueueSystemDataConfig
+      code: "task_queue_system_data"
+      dataStoreConfig: *redisConfig
