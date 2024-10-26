@@ -1,4 +1,4 @@
-# TaskManager Project
+# TaskManager
 
 The taskmanager project is a task queue system implemented in Go, featuring an API and a worker component. It demonstrates a custom Dependency Injection (DI) system inspired by the Clean Architecture pattern, emphasizing separation of concerns, testability, and scalability.
 
