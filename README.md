@@ -68,7 +68,7 @@ The project follows the Clean Architecture principles as proposed by Robert C. M
 1. Clone the Repository:
 
 ```bash
-git clone https://github.com/YourUsername/taskmanager.git
+git clone https://github.com/Systenix/taskmanager.git
 cd taskmanager
 ```
 
